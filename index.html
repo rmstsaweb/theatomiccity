@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Atomic City</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="nav.css">
+    </head>
+    <body>
+        <nav id="main-header">
+            <a href="index.html" class="main-header-a">Home</a>
+            <a href="about.html" class="main-header-a">About</a>
+            <a href="manhattan.html" class="main-header-a">Manhattan Project</a>
+            <a href="scarbro.html" class="main-header-a">Scarbro-85</a>
+            <a href="robertsville.html" class="main-header-a">Robertsville Community</a>
+            <a href="timeline.html" class="main-header-a">Timeline</a>
+            <a href="sources.html" class="main-header-a">Sources</a>
+        </nav>
+        <div id="background-image-scroller">
+            <img src="phones.jpeg" id="img1" class="background-images">
+            <img src="warends.jpg" id="img2" class="background-images">
+        </div>
+        <script>
+            document.querySelector("#img2").style.display = "none";
+            document.querySelectorAll(".background-images").forEach((image) => {
+                image.style.width = window.innerWidth + "px";
+            });
+            document.querySelectorAll(".background-images").forEach((image) => {
+                image.style.height = window.innerHeight + "px";
+            });
+            let currentPic = 1;
+            setInterval(() => {
+                currentPic++;
+                if(currentPic > 2) {
+                    currentPic = 1;
+                }
+                document.querySelectorAll(".background-images").forEach((picture) => {
+                picture.style.display = "none";
+            })
+                document.querySelector("#img" + currentPic).style.display = "block";
+            }, 5000);
+        </script>
+    </body>
+</html>

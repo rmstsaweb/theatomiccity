@@ -1,0 +1,39 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <nav id="main-header">
+            <a href="index.html" class="main-header-a">Home</a>
+            <a href="about.html" class="main-header-a">About</a>
+            <a href="manhattan.html" class="main-header-a">Manhattan Project</a>
+            <a href="scarbro.html" class="main-header-a">Scarbro-85</a>
+            <a href="robertsville.html" class="main-header-a">Robertsville Community</a>
+            <a href="timeline.html" class="main-header-a">Timeline</a>
+            <a href="sources.html" class="main-header-a">Sources</a>
+    </nav>
+    <div id="times">
+        <div>
+            <div class="timelines" onclick="goto('robertsville.html')" style="background-image: url('sign.jpeg')"></div>
+            <h3 class="timelinetitles"><a href="robertsville.html" class="notalink">Robertsville Community - 1804</a></h3>
+        </div>
+        <div>
+            <div class="timelines" onclick="goto('manhattan.html')" style="background-image: url('warends2.jpg')"></div>
+            <h3 class="timelinetitles"><a href="robertsville.html" class="notalink">Manhattan Project - 1942 to 1947</a></h3>
+        </div>
+        <div>
+            <div class="timelines" onclick="goto('scarbro.html')" style="background-image: url('sankofa2.jpeg')"></div>
+            <h3 class="timelinetitles"><a href="robertsville.html" class="notalink">Scarbro 85 - 1955</a></h3>
+        </div>
+    </div>
+    <script>
+        function goto(page) {
+            window.location.assign(page);
+        }
+    </script>
+</body>
+</html>

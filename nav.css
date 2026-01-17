@@ -1,0 +1,56 @@
+body {
+    margin: 0px;
+}
+
+#main-header {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    padding: 12px;
+    font-size: 20px;
+    top: 0vh;
+    z-index: 100000000000000000;
+}
+
+.main-header-a {
+    padding-right: 10px;
+    font-family: "Bahnschrift Condensed", "Bahnschrift", sans-serif;
+    color: white;
+    text-decoration: none;
+    top: 0vh;
+}
+
+* {
+    position: relative;
+    top: 20px;
+    font-family: "Bahnschrift Condensed", "Bahnschrift", sans-serif;
+}
+
+.timelines {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: black solid 3px;
+}
+
+.background-images {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 48px;
+}
+
+.timelines:hover {
+    cursor: pointer;
+}
+
+.timelinetitles {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.notalink {
+    text-decoration: none;
+    color: black;
+}
